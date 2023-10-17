@@ -7,14 +7,14 @@
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
-/* FLAGS */
+/* MY FLAGS */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
 
-/* SIZES */
+/* MY SIZES */
 #define S_LONG 2
 #define S_SHORT 1
 
@@ -58,16 +58,16 @@ int myownprint_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int myownprint_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int myownprint_unsigned(va_list types, char buffer[],
+int eownprint_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int myownprint_octal(va_list types, char buffer[],
+int eownprint_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int myownprint_hexadecimal(va_list types, char buffer[],
+int eownprint_hexadecimal(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int myownprint_hexa_upper(va_list types, char buffer[],
+int eownprint_hexa_upper(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
-int myownprint_hexa(va_list types, char map_to[],
+int eownprint_hexa(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 
 /* Function to print non printable characters */
